@@ -12,7 +12,7 @@ const Doctors = () => {
   const getDoctors = async () => {
     const profession = params.id;
     const res = await axios.post(
-      "https://full-stack-bvoj.vercel.app/api/data/service",
+      "https://full-stack-bvoj.vercel.app/api/data/doctors",
       {
         profession,
       }
