@@ -11,9 +11,12 @@ const Doctors = () => {
 
   const getDoctors = async () => {
     const profession = params.id;
-    const res = await axios.post("http://localhost:3001/api/data/doctors", {
-      profession,
-    });
+    const res = await axios.post(
+      "https://full-stack-bvoj.vercel.app/api/data/service",
+      {
+        profession,
+      }
+    );
     setData(res.data);
   };
 

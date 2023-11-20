@@ -5,7 +5,9 @@ import axios from "axios";
 const Home = () => {
   const [data, setData] = useState([]);
   const getData = async () => {
-    const res = await axios.get("http://localhost:3001/api/data/service");
+    const res = await axios.get(
+      "https://full-stack-bvoj.vercel.app/api/data/service"
+    );
     setData(res.data);
   };
   useEffect(() => {
